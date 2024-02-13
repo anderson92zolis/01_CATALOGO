@@ -1,11 +1,119 @@
-<!DOCTYPE html>                     <!-- declaration defines that this document is an HTML5 document-->
+<!DOCTYPE html>
+<!-- The declaration defines that this document is an HTML5 document -->
 <html lang="en">
-<head> <!--  element contains meta information about the HTML page  -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <!-- The "head" element contains meta information about the HTML page -->
+    <meta charset="UTF-8" />
+    <!-- The "meta charset" tag defines the character (ñ) set used in the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- The "meta viewport" tag provides rendering instructions for browsers -->
     <title>Document</title>
-</head> 
-<body> <!-- element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.-->
-    
-</body>
+    <!-- The "title" tag defines the title of the page that appears in the browser's tab -->
+  </head>
+  <body>
+    <!-- The "body" element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc. -->
+
+    <!-- estas son las etiquetas para poner titulo -->
+    <!-- usando ctrl + k +c -->
+
+    <nombre_etiqueta> Contenido </nombre_etiqueta>
+
+    <h1 id="titulo1">Soy un título</h1>
+    <!-- The more important tag -->
+    <h2>soy un h2</h2>
+    <h3>soy un h3</h3>
+    <h4>Ya no soy un h4</h4>
+    <h5>Esto es un H5, la ecuación de la energía es: e= mc<sup>2</sup></h5>
+    <h6>Esto es un <small>h6</small></h6>
+    <p>Soy <strong>párrafo</strong></p>
+    <p>El agua es: H<sub>2</sub>0</p>
+    <p><cite>Galileo fue un genio</cite> en su época</p>
+    <blockquote>...sin embargo se mueve</blockquote>
+
+    <!-- 2 Listas -->
+    <!-- 2.1 Listas desordenadas = unordered lists -->
+    <h2>Lista de la compra</h2>
+    <ul>
+      <li>Leche</li>
+      <li>huevos</li>
+      <li>azucar</li>
+    </ul>
+
+    <!-- listas ordenadas = orderned list -->
+    <h2>Países más contaminadores del mundo</h2>
+
+    <ol type="I" reversed>
+      <li>China - 17 millones de toneladas por año.</li>
+      <li>India - 9 millones de toneladas por año.</li>
+      <li>EEUU - 8 millones de toneladas por año.</li>
+    </ol>
+
+    <!-- 3 Tablas-->
+
+    <h2>Ejemplo Factura</h2>
+    <table style="width: 100%">
+      <thead>
+        <tr>
+          <th>Concepto</th>
+          <th>Unidades</th>
+          <th>Precio</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Nelevisor 80 pulgadas</td>
+          <td>4</td>
+          <td>20</td>
+          <td>80</td>
+        </tr>
+        <tr>
+          <td>Nevera congelador 100 litros capacidad</td>
+          <td>2</td>
+          <td>600</td>
+          <td>1200</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3"><strong>TOTAL</strong></td>
+          <td>1280</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <!--4.   IMAGES  -->
+    <!-- <img
+    src="https://etimg.etb2bimg.com/photo/94574823.cms"
+    alt="una taza de caffee"
+    width="300"
+    height="300"
+  />
+
+  <figure>
+    <img
+      src="pictures/wepik-export-202402121044591j5z.jpeg"
+      alt="coffe and tee"
+      title="good coffe"
+    />
+    <figcaption><small>esto es un cafecito rico</small></figcaption>
+  </figure> -->
+
+
+
+    <!-- <img
+      src="pictures/2400.jpg"
+      alt="cafe"
+      sizes="(max-width: 430px) 100vw, (max-width: 800) 100vw, (max-width: 1200) 100vw, (max-width: 1500) 100vw"
+      srcset="
+    pictures/640.jpg 640w ,
+    pictures/1200.jpg 1200w ,
+    pictures/1920.jpg 1920w ,
+    pictures/2400.jpg 2400w 
+        "
+    /> -->
+
+    <a href="https://www.w3schools.com">Visit W3Schools</a>
+    <a href="#titulo1"> Ir al principio</a>
+  </body>
 </html>
