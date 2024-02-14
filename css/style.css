@@ -1,0 +1,12 @@
+p {
+    background-color: red;
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+img {width: 100%;} /* ESTO ESTA BIEN SIEMPRE Y CUANDO SE VEA ALTERADO LA CALIDAD Y CUANDO USAMOS RESPONSE PARA CAMBIAR LA IMAGEN*/
+
+h1 {text-align: center;
+font-family: sans-serif;} /* para titulos*/
