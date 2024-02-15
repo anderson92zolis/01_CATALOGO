@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+*  {
+    margin: 0;
+}
+
+p {
+    background-color: dimgray;
+}
+
+
+img {width: 100%;} /* ESTO ESTA BIEN SIEMPRE Y CUANDO SE VEA ALTERADO LA CALIDAD Y CUANDO USAMOS RESPONSE PARA CAMBIAR LA IMAGEN*/
+
+h1, h2, h3 {text-align: center;
+font-family: sans-serif;
+font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+} /* para titulos*/
+
+
+footer {
+    background-color: dimgray;
+    text-align: center;
+}
+
+#copyright {
+    font-size: 25px;
+}
+dl {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+  }

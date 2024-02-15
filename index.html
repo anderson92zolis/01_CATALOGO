@@ -5,12 +5,87 @@
     <!-- The "head" element contains meta information about the HTML page -->
     <meta charset="UTF-8" />
     <!-- The "meta charset" tag defines the character (ñ) set used in the document -->
+
+    <meta name="author" content="Anderson" />
+    <meta name="description" content="Recopilatorio de etiqeutas html" />
+    <meta
+      name="keywords"
+      content="HTML, imágenes, desarrollo web, diseño web"
+    />
+    <!-- ayuda al marketing SEO-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- The "meta viewport" tag provides rendering instructions for browsers -->
+
+    <link rel="icon" type="image/x-icon" href="/img/fotoParaFavicon.ico" />
+    <!-- https://icon-icons.com/ -->
+
     <title>Document</title>
     <!-- The "title" tag defines the title of the page that appears in the browser's tab -->
+
+    <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
+    <header>
+      <picture>
+        <source srcset="" media="(max-width:500px)" />
+        <source srcset="" media="(max-width:1100px)" />
+        <img src="laptop_original.png" alt="imagen laptop" />
+      </picture>
+      <h1>etiqueta HTML</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html"></a>Index</li>
+          <li><a href="imagenes.html"></a>Imagenes</li>
+          <li><a href="listas.html"></a>listas</li>
+          <li><a href="multimedia.html"></a>Multimedia</li>
+          <li><a href="semantica.html"></a>Semantica</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+        <section>
+          <h2>instruction a  HTML</h2>
+          <p>sintaxis básica</p>
+          <pre>
+            <code>
+              &lt;!DOCTYPE html&gt;
+              &lt;html lang="es"&gt;
+              &lt;head&gt;
+                  &lt;meta charset="UTF-8"&gt;
+                  &lt;title&gt;Mi Página&lt;/title&gt;
+              &lt;/head&gt;
+              &lt;body&gt;
+                  &lt;h1&gt;¡Hola Mundo!&lt;/h1&gt;
+              &lt;/body&gt;
+              &lt;/html&gt;
+            </code>
+          </pre>
+
+          <pre>
+            <code>
+              &lt;!DOCTYPE html&gt;
+              &lt;html lang="es"&gt;
+              &lt;head&gt;
+                  &lt;meta charset="UTF-8"&gt;
+                  &lt;title&gt;Mi Página&lt;/title&gt;
+              &lt;/head&gt;
+              &lt;body&gt;
+                  &lt;h1&gt;¡Hola Mundo!&lt;/h1&gt;
+              &lt;/body&gt;
+              &lt;/html&gt;
+            </code>
+          </pre>
+
+        </section>
+    </main>
+
+    <footer>
+      <p id = "copyright"> &COPY; ANDERSON</p>
+      <p>Curso 2024</p>
+    </footer>
+
     <!-- The "body" element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc. -->
 
     <!-- estas son las etiquetas para poner titulo -->
@@ -27,8 +102,16 @@
     <h6>Esto es un <small>h6</small></h6>
     <p>Soy <strong>párrafo</strong></p>
     <p>El agua es: H<sub>2</sub>0</p>
+
     <p><cite>Galileo fue un genio</cite> en su época</p>
     <blockquote>...sin embargo se mueve</blockquote>
+    <!-- en líneas diferentes -->
+
+    <p>
+      Ejemplo de cita corta:<cite>Sócrates</cite> dijo
+      <q> conocete a ti mismo</q>
+    </p>
+    <!-- q en las mismas líneas -->
 
     <!-- 2 Listas -->
     <!-- 2.1 Listas desordenadas = unordered lists -->
@@ -99,8 +182,6 @@
     <figcaption><small>esto es un cafecito rico</small></figcaption>
   </figure> -->
 
-
-
     <!-- <img
       src="pictures/2400.jpg"
       alt="cafe"
@@ -113,7 +194,44 @@
         "
     /> -->
 
+    <picture>
+      <source src="img/2400.jpg" media="(min-width: 650px)" />
+      <source src="img/2400.jpg" media="(min-width: 650px)" />
+      <source src="img/2400.jpg" media="(min-width: 650px)" />
+      <!-- este atributo no se cierra-->
+      <img src="img/640.png" alt="" />
+    </picture>
+
+    <!--enlaces -->
+
     <a href="https://www.w3schools.com">Visit W3Schools</a>
     <a href="#titulo1"> Ir al principio</a>
+    <a href="https://undraw.co/">
+      <img src="img/undraw.svg" alt="" width="100"
+    /></a>
+
+
+
+    <!-- etiqeutas para maquetar-->
+    <div>Hola</div>
+    <span>Hola</span>
+    <span>Hola</span>
+    <header></header>
+    <header>
+      <h1>titulo</h1>
+      <nav>Navegación</nav>
+    </header>
+    <main></main>
+    <section><article></article></section>
+
+    <!--lista de definiciones -->
+
+    <dl>
+      <dt>Coffee</dt>
+      <dd>Black hot drink</dd>
+      <dt>Milk</dt>
+      <dd>White cold drink</dd>
+    </dl>
+
   </body>
 </html>
