@@ -45,10 +45,10 @@
     </header>
 
     <main>
-        <section>
-          <h2>instruction a  HTML</h2>
-          <p>sintaxis básica</p>
-          <pre>
+      <section>
+        <h2>instruction a HTML</h2>
+        <p>sintaxis básica</p>
+        <pre>
             <code>
               &lt;!DOCTYPE html&gt;
               &lt;html lang="es"&gt;
@@ -63,7 +63,7 @@
             </code>
           </pre>
 
-          <pre>
+        <pre>
             <code>
               &lt;!DOCTYPE html&gt;
               &lt;html lang="es"&gt;
@@ -77,12 +77,11 @@
               &lt;/html&gt;
             </code>
           </pre>
-
-        </section>
+      </section>
     </main>
 
     <footer>
-      <p id = "copyright"> &COPY; ANDERSON</p>
+      <p id="copyright">&COPY; ANDERSON</p>
       <p>Curso 2024</p>
     </footer>
 
@@ -210,8 +209,6 @@
       <img src="img/undraw.svg" alt="" width="100"
     /></a>
 
-
-
     <!-- etiqeutas para maquetar-->
     <div>Hola</div>
     <span>Hola</span>
@@ -233,5 +230,47 @@
       <dd>White cold drink</dd>
     </dl>
 
+    <!--details -->
+
+    <details open>
+      <!--open para mostrar abierto-->
+      <summary>Qué día es hoy? Esto es un desplegable</summary>
+      <p>Es martes.</p>
+      <details>
+        <!--open para mostrar abierto-->
+        <summary>Qué día es hoy?</summary>
+        <p>Es martes.</p>
+      </details>
+    </details>
+
+    <!-- dialogo-->
+    <!-- para hacer modales:  como mensajes que aparecen el pop-up para ello necesitas un script -->
+    <!-- se crea un DIALOG:  esto aparece en  pantalla y no permite interactuar con la pagina mientras este activo-->
+    <dialog id="modal">
+      <h2>Esto es un ejemplo de ventana modal</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est tenetur
+        alias voluptatem tempora odit quia voluptatibus molestias, commodi
+        eligendi doloribus.
+      </p>
+      <!-- lorem20    -> para veinte palabras-->
+      <button id="cerrar">cerar</button>
+    </dialog>
+
+    <!-- este button estara en el index al clicar llamara  a el clic y cerrar dentro de la ventana emergente
+    -->
+    <button id="abrir">Abrir</button>
+
+    <script>
+      <!--llamara al modal creado como ventana emergente -->
+      window.abrir.addEventListener("click", () => {
+        window.modal.showModal();
+      });
+
+      
+      window.cerrar.addEventListener("click", () => {
+        window.modal.close();
+      });
+    </script>
   </body>
 </html>
